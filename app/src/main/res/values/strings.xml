@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LayoutingExample</string>
+    <string name="text_name">Hai, Hermas !</string>
+    <string name="text_greetings">What you gonna eat this day ?</string>
+    <string name="text_title_banner">Belilah buah hasil tanam mahasiswa Gunadarma !</string>
+    <string name="text_desc_banner">Klik pada banner untuk membeli</string>
+    <string name="promotions">Promotions</string>
+    <string name="penawaran_hari_ini">Penawaran hari ini</string>
+    <string name="gratis_sekotak_kentang_goreng">gratis sekotak kentang goreng</string>
+    <string name="untuk_semua_pesanan_di_atas_rp_100_000">untuk semua pesanan di atas Rp.100.000</string>
+    <string name="catalog">Catalog</string>
+    <string name="nagative_to_provile">nagative to provile</string>
+    <string name="about">about\n</string>
+    <string name="home">home\n</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_grid_mode">Grid Mode</string>
+    <string name="text_list_mode">List Mode</string>
+    <string name="rp_18_000">Rp.18.000</string>
+    <string name="name">Rohit</string>
+</resources>

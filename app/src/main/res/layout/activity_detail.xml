@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:fillViewport="true"
+    tools:context=".feature.detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_provile"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/foto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_provile"
+            tools:text="@string/rp_18_000" />
+
+        <TextView
+            android:id="@+id/tv_name_food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart= "15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/iv_provile"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Hallow Rohit" />
+
+
+        <TextView
+            android:id="@+id/tv_details_food"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_food"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Lead Android @Everywhere" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintEnd_toStartOf="@+id/tv_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_details_food" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_marginTop="40dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_location"
+            app:layout_constraintTop_toBottomOf="@+id/tv_details_food"
+            tools:text="Hallow Rohit" />
+
+
+        <TextView
+            android:id="@+id/tv_detail_location"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_location"
+            app:layout_constraintTop_toBottomOf="@id/tv_location"
+            tools:text="Lead Android @Everywhere" />
+
+        <TextView
+            android:id="@+id/tv_numberadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="1"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_checkout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ib_plus"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_numberadd"
+            app:layout_constraintStart_toEndOf="@+id/tv_numberadd" />
+        <ImageButton
+            android:id="@+id/btn_min"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ib_minus"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_numberadd"
+            app:layout_constraintEnd_toStartOf="@+id/tv_numberadd" />
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah ke keranjang"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
