@@ -16,6 +16,10 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed() // Kembali ke tata letak sebelumnya saat tombol "Back" ditekan
+        }
+
         val food = intent.getParcelableExtra<Food>(EXTRAS_ITEM)
         food?.let { displayFoodDetails(it) }
     }
